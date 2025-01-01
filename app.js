@@ -1,7 +1,7 @@
 const axios = require('axios');
 const express = require('express');
 const app = express();
-const port = 4000;
+const port = process.argv[2] || 5408;
 
 // 假设Const.Data是一个全局对象，用于存储翻译令牌
 const Const = {
